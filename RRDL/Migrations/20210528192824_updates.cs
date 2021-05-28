@@ -6,10 +6,6 @@ namespace RRDL.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropColumn(
-                name: "Discriminator",
-                table: "AspNetUsers");
-
             migrationBuilder.AddColumn<string>(
                 name: "Address",
                 table: "Restaurants",
