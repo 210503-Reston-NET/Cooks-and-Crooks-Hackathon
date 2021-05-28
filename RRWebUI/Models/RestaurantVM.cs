@@ -1,6 +1,8 @@
-﻿using RRModels;
+﻿using Microsoft.AspNetCore.Http;
+using RRModels;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RRWebUI.Models
 {
@@ -16,6 +18,8 @@ namespace RRWebUI.Models
             Name = restaurant.Name;
             City = restaurant.City;
             State = restaurant.State;
+            ImageName = restaurant.imageName;
+            Image = restaurant.ImageFile;
         }
 
         public RestaurantVM()
@@ -30,9 +34,14 @@ namespace RRWebUI.Models
 
         [Required]
         public string City { get; set; }
-
+            
         [DisplayName("State or Province")]
         [Required]
         public string State { get; set; }
+        public string ImageName { get; set; }
+
+        [DisplayName("Restaurant Image")]
+        [NotMapped]
+        public IFormFile Image { get; set; }
     }
 }

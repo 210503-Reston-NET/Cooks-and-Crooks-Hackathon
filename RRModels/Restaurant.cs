@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.RegularExpressions;
 
 /// <summary>
@@ -26,6 +28,12 @@ namespace RRModels
             this.Name = name;
             this.City = city;
             this.State = state;
+        }
+        public Restaurant(int id,string name, string city, string state, string filename, IFormFile image):this(name, city, state)
+        {
+            this.imageName = filename;
+            this.ImageFile = image;
+            this.Id = id;
         }
 
         public Restaurant(string name, string city, string state, string cat, int cap) : this(name, city, state)
@@ -85,6 +93,15 @@ namespace RRModels
         /// This contains the review of a particular restaurant
         /// </summary>
         /// <value></value>
+        /// 
+        ///Image name to be used to get and set the image
+        public string imageName { get; set; }
+
+        /// <summary>
+        /// Image file
+        /// </summary>
+        [NotMapped]
+        public IFormFile ImageFile { get; set; }
         public List<Review> Reviews { get; set; }
 
         public override string ToString()

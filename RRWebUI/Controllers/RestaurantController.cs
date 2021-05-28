@@ -1,9 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RRBL;
 using RRModels;
 using RRWebUI.Models;
+using System;
+using System.IO;
 using System.Linq;
 
 namespace RRWebUI.Controllers
@@ -12,18 +15,19 @@ namespace RRWebUI.Controllers
     public class RestaurantController : Controller
     {
         private IRestaurantBL _restaurantBL;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public RestaurantController(IRestaurantBL restaurantBL)
+        public RestaurantController(IRestaurantBL restaurantBL, IWebHostEnvironment webHostEnvironment)
         {
             _restaurantBL = restaurantBL;
+            this._webHostEnvironment = webHostEnvironment;
         }
-
         // GET: RestaurantController
         // Actions are public methods in controllers that respond to client requests
         // You can have specific actions respond to specific requests,
         // you can also have actions, that respond to multiple kinds of requests
         // You just have to map the request type to the action properly
-        
+
         public ActionResult Index()
         {
             // You have different kinds of Views:
@@ -55,12 +59,25 @@ namespace RRWebUI.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    _restaurantBL.AddRestaurant(new Restaurant
+                    //Save image to wwwroot/images
+                    string wwwRootPath = _webHostEnvironment.WebRootPath;
+                    string fileName = Path.GetFileNameWithoutExtension(restaurantVM.Image.FileName);
+                    string extension = Path.GetExtension(restaurantVM.Image.FileName);
+                    restaurantVM.ImageName = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                    string path = Path.Combine(wwwRootPath+"/images/", fileName);
+                    using (var fileStream = new FileStream(path,FileMode.Create))
                     {
-                        Name = restaurantVM.Name,
-                        City = restaurantVM.City,
-                        State = restaurantVM.State
+                        restaurantVM.Image.CopyToAsync(fileStream);
                     }
+
+                    _restaurantBL.AddRestaurant(new Restaurant
+                        {
+                            Name = restaurantVM.Name,
+                            City = restaurantVM.City,
+                            State = restaurantVM.State,
+                            imageName = restaurantVM.ImageName,
+                            ImageFile = restaurantVM.Image
+                        }
                     );
                     return RedirectToAction(nameof(Index));
                 }
@@ -87,7 +104,17 @@ namespace RRWebUI.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    _restaurantBL.UpdateRestaurant(new Restaurant(restaurantVM.Id, restaurantVM.Name, restaurantVM.City, restaurantVM.State));
+                    //Save image to wwwroot/images
+                    string wwwRootPath = _webHostEnvironment.WebRootPath;
+                    string fileName = Path.GetFileNameWithoutExtension(restaurantVM.Image.FileName);
+                    string extension = Path.GetExtension(restaurantVM.Image.FileName);
+                    restaurantVM.ImageName = fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                    string path = Path.Combine(wwwRootPath + "/images/", fileName);
+                    using (var fileStream = new FileStream(path, FileMode.Create))
+                    {
+                        restaurantVM.Image.CopyToAsync(fileStream);
+                    }
+                    _restaurantBL.UpdateRestaurant(new Restaurant(restaurantVM.Id, restaurantVM.Name, restaurantVM.City, restaurantVM.State, restaurantVM.ImageName, restaurantVM.Image));
                     return RedirectToAction(nameof(Index));
                 }
                 return View();

@@ -65,7 +65,7 @@ namespace RRDL
             Restaurant found = _context.Restaurants.FirstOrDefault(resto => resto.Name == restaurant.Name && resto.City == restaurant.City && resto.State == restaurant.State);
             // we get the results and return null if nothing is found, otherwise return a Model.Restaurant that was found
             if (found == null) return null;
-            return new Model.Restaurant(found.Id, found.Name, found.City, found.State);
+            return new Model.Restaurant(found.Id,found.Name, found.City, found.State, found.imageName, found.ImageFile);
         }
 
         public Restaurant GetRestaurantById(int id)
