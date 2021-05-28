@@ -49,4 +49,12 @@ steps:
     azureSubscription: 'Azure subscription 1(b5a73573-c365-4df4-90d9-79329c2413a9)'
     appName: 'cooksandcrooks'
     resourceGroupName: 'revature-training'
-    connectionStrings: 'Host=kashin.db.elephantsql.com;Port=5432;Database=kqiidrll;Username=kqiidrll;Password=eDaDfWVJccDhv4bvMC2VqqLsnmce1mOB'
+    connectionStrings: |
+      [
+        {
+          "name": "DBCredentials",
+          "value": "$(Host=kashin.db.elephantsql.com;Port=5432;Database=kqiidrll;Username=kqiidrll;Password=eDaDfWVJccDhv4bvMC2VqqLsnmce1mOB)",
+          "type": "PostgreSQL",
+          "slotSetting": false
+        }
+      ]
