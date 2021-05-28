@@ -18,5 +18,10 @@ namespace RRBL
         Restaurant UpdateRestaurant(Restaurant restaurant);
 
         List<Restaurant> GetRecommendation(Customer customer);
+
+        List<Restaurant> GetMatchedRestaurants(string city, string state);
+        List<Restaurant> GetMatchedCategory(string city, string state, string category);
+        
+
     }
 }

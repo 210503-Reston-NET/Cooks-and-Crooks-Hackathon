@@ -87,5 +87,24 @@ namespace RRBL
         {
             return _repo.UpdateRestaurant(restaurant);
         }
+
+        public List<Restaurant> GetMatchedRestaurants(string city, string state)
+        {
+            return _repo.GetMatchedRestaurants(city, state);
+        }
+        
+        public List<Restaurant> GetMatchedCategory(string city, string state, string category)
+        {
+            List<Restaurant> restaurants = GetMatchedRestaurants(city, state);
+            List<Restaurant> result = new List<Restaurant>();
+            foreach(Restaurant r in restaurants)
+            {
+                if (r.Category == category)
+                {
+                    result.Add(r);
+                }
+            }
+            return result;
+        }
     }
 }

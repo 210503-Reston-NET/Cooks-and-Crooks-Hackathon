@@ -5,6 +5,9 @@ using RRBL;
 using RRModels;
 using RRWebUI.Models;
 using System.Linq;
+using GoogleMaps.LocationServices;
+using System.Collections.Generic;
+
 
 namespace RRWebUI.Controllers
 {
@@ -39,6 +42,36 @@ namespace RRWebUI.Controllers
                 .ToList()
                 );
         }
+
+        public ActionResult Search(string city, string state)
+        {
+            // string city = "Seattle";
+            // string state = "WA";
+            List<Restaurant> restaurants = _restaurantBL.GetMatchedRestaurants(city, state);
+            // run dotnet add package GoogleMaps.LocationServices --version 1.2.0.5
+            //var locationService = new GoogleLocationService("AIzaSyAj2PahQUZ5Xum6DUD4k6aSG2dnIgNs1wM");
+            string markers = "[";
+            foreach(Restaurant resto in restaurants)
+            {
+                string address = $"{resto.Address}, {resto.City}, {resto.State}";
+                var locationService = new GoogleLocationService("AIzaSyAj2PahQUZ5Xum6DUD4k6aSG2dnIgNs1wM");
+                var point = locationService.GetLatLongFromAddress(address);  
+                var lat = point.Latitude;  
+                var lon = point.Longitude; 
+                Locations MapAddress = new Locations(resto.City, lat, lon, resto.Name);
+
+                markers += "{";    
+                markers += string.Format("'title': '{0}',", MapAddress.CityName);    
+                markers += string.Format("'lat': '{0}',", MapAddress.Latitude);    
+                markers += string.Format("'lng': '{0}',", MapAddress.Longitude);    
+                markers += string.Format("'name': '{0}'", MapAddress.Name);    
+                markers += "},"; 
+            }
+            markers += "];";    
+            ViewBag.Markers = markers; 
+            return View();
+        }
+
 
         // GET: RestaurantController/Create
         public ActionResult Create()

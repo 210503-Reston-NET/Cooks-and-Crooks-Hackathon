@@ -98,5 +98,23 @@ namespace RRDL
             _context.SaveChanges();
             return restaurant;
         }
+
+        public List<Restaurant> GetMatchedRestaurants(string city, string state)
+        {
+            return _context.Restaurants.Where
+            (
+                resto => resto.City.ToLower() == city.ToLower() && resto.State.ToLower() == state.ToLower()
+            ).Select(
+                resto => new Restaurant()
+                {
+                    Id = resto.Id,
+                    Name = resto.Name,
+                    City = resto.City,
+                    State = resto.State,
+                    Address = resto.Address,
+                    Category = resto.Category
+                })
+            .ToList();
+        }
     }
 }

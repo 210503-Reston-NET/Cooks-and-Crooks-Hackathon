@@ -80,6 +80,7 @@ namespace RRModels
         /// <summary>
         /// this describes the type of food the restaurant serves.
         /// </summary>
+        public string Address { get; set; }
         public string Category { get; set; }
         /// <summary>
         /// This contains the review of a particular restaurant

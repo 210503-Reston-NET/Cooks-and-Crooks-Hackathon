@@ -16,6 +16,8 @@ namespace RRWebUI.Models
             Name = restaurant.Name;
             City = restaurant.City;
             State = restaurant.State;
+            Address = restaurant.Address;
+            Category = restaurant.Category;
         }
 
         public RestaurantVM()
@@ -34,5 +36,9 @@ namespace RRWebUI.Models
         [DisplayName("State or Province")]
         [Required]
         public string State { get; set; }
+
+        
+        public string Category { get; set; }
+        public string Address { get; set; }
     }
 }

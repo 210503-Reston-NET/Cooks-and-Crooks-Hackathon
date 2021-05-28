@@ -20,5 +20,7 @@ namespace RRDL
         Review AddReview(Restaurant restaurant, Review review);
 
         List<Review> GetReviews(Restaurant restaurant);
+        List<Restaurant> GetMatchedRestaurants(string city, string state);
+
     }
 }
