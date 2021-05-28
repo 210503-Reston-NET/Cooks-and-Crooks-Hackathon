@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Juniper\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Juniper\\.nuget\\packages"
+      "C:\\Users\\sehar\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\sehar\\.nuget\\packages"
     ]
   }
 }

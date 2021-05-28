@@ -10217,19 +10217,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Juniper\\.nuget\\packages\\": {}
+    "C:\\Users\\sehar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRTests\\RRTests.csproj",
+      "projectUniqueName": "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRTests\\RRTests.csproj",
       "projectName": "RRTests",
-      "projectPath": "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRTests\\RRTests.csproj",
-      "packagesPath": "C:\\Users\\Juniper\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRTests\\obj\\",
+      "projectPath": "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRTests\\RRTests.csproj",
+      "packagesPath": "C:\\Users\\sehar\\.nuget\\packages\\",
+      "outputPath": "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Juniper\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sehar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10243,17 +10243,17 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRBL\\RRBL.csproj": {
-              "projectPath": "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRBL\\RRBL.csproj"
+            "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRBL\\RRBL.csproj": {
+              "projectPath": "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRBL\\RRBL.csproj"
             },
-            "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRDL\\RRDL.csproj": {
-              "projectPath": "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRDL\\RRDL.csproj"
+            "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRDL\\RRDL.csproj": {
+              "projectPath": "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRDL\\RRDL.csproj"
             },
-            "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRModels\\RRModels.csproj": {
-              "projectPath": "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRModels\\RRModels.csproj"
+            "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRModels\\RRModels.csproj": {
+              "projectPath": "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRModels\\RRModels.csproj"
             },
-            "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRWebUI\\RRWebUI.csproj": {
-              "projectPath": "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRWebUI\\RRWebUI.csproj"
+            "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRWebUI\\RRWebUI.csproj": {
+              "projectPath": "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRWebUI\\RRWebUI.csproj"
             }
           }
         }
@@ -10322,7 +10322,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
