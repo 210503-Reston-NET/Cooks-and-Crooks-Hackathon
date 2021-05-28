@@ -49,7 +49,7 @@ namespace RRBL
             return _repo.GetAllRestaurants();
         }
 
-        public Restaurant GetRecommendation(Customer customer)
+        public List<Restaurant> GetRecommendation(Customer customer)
         {
             Random random = new Random();
             List<Restaurant> restaurants = GetAllRestaurants();
@@ -70,8 +70,7 @@ namespace RRBL
                 return null;
             }
             recommendations = recommendations.OrderBy(rec => random.Next()).Take(1).ToList();
-            Restaurant recommendation = recommendations[0];
-            return recommendation;
+            return recommendations;
         }
 
         public Restaurant GetRestaurant(Restaurant restaurant)

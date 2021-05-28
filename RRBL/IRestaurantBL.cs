@@ -17,6 +17,6 @@ namespace RRBL
 
         Restaurant UpdateRestaurant(Restaurant restaurant);
 
-        Restaurant GetRecommendation(Customer customer);
+        List<Restaurant> GetRecommendation(Customer customer);
     }
 }
