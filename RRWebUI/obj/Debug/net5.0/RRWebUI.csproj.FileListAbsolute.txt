@@ -158,6 +158,7 @@ C:\Users\Juniper\Revature\trainer-code\3-mvc\RestaurantReviews\RRwebUI\obj\Debug
 C:\Users\Juniper\Revature\trainer-code\3-mvc\RestaurantReviews\RRwebUI\obj\Debug\net5.0\RRWebUI.genruntimeconfig.cache
 C:\Users\Juniper\Revature\trainer-code\3-mvc\RestaurantReviews\RRWebUI\obj\Debug\net5.0\Razor\Views\Restaurant\Edit.cshtml.g.cs
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\RRWebUI.StaticWebAssets.xml
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\RRWebUI.exe
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\RRWebUI.deps.json
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\RRWebUI.runtimeconfig.json
@@ -168,6 +169,11 @@ C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\RR
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\RRWebUI.Views.dll
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\RRWebUI.Views.pdb
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
@@ -182,6 +188,9 @@ C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Mi
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Microsoft.Identity.Client.dll
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
@@ -286,6 +295,7 @@ C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\RR
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\RRWebUI.AssemblyInfoInputs.cache
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\RRWebUI.AssemblyInfo.cs
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\RRWebUI.csproj.CoreCompileInputs.cache
+C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\RRWebUI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\RRWebUI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\RRWebUI.RazorAssemblyInfo.cache
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\RRWebUI.RazorAssemblyInfo.cs
@@ -316,3 +326,10 @@ C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\RR
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\ref\RRWebUI.dll
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\RRWebUI.pdb
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\RRWebUI.genruntimeconfig.cache
+C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRWebUI\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs

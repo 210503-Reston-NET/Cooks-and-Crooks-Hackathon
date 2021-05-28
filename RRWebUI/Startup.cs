@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using RRBL;
 using RRDL;
+using RRModels;
 
 namespace RRWebUI
 {
@@ -29,10 +31,16 @@ namespace RRWebUI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddRazorPages();
             services.AddDbContext<RestaurantDBContext>(options => options.UseNpgsql(Configuration.GetConnectionString("RestaurantDB")));
             services.AddScoped<IRepository, RepoDB>();
             services.AddScoped<IRestaurantBL, RestaurantBL>();
             services.AddScoped<IReviewBL, ReviewBL>();
+
+            services.AddDefaultIdentity<Customer>()
+                .AddEntityFrameworkStores<RestaurantDBContext>()
+                .AddDefaultUI()
+                .AddDefaultTokenProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,6 +61,7 @@ namespace RRWebUI
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -60,6 +69,7 @@ namespace RRWebUI
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages();
             });
         }
     }

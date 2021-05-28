@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RRBL;
 using RRModels;
@@ -7,6 +8,7 @@ using System.Linq;
 
 namespace RRWebUI.Controllers
 {
+    [Authorize]
     public class RestaurantController : Controller
     {
         private IRestaurantBL _restaurantBL;
@@ -21,6 +23,7 @@ namespace RRWebUI.Controllers
         // You can have specific actions respond to specific requests,
         // you can also have actions, that respond to multiple kinds of requests
         // You just have to map the request type to the action properly
+        
         public ActionResult Index()
         {
             // You have different kinds of Views:
