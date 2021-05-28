@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRDL\\RRDL.csproj": {}
+    "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRDL\\RRDL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRDL\\RRDL.csproj": {
+    "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRDL\\RRDL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRDL\\RRDL.csproj",
+        "projectUniqueName": "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRDL\\RRDL.csproj",
         "projectName": "RRDL",
-        "projectPath": "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRDL\\RRDL.csproj",
-        "packagesPath": "C:\\Users\\Juniper\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRDL\\obj\\",
+        "projectPath": "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRDL\\RRDL.csproj",
+        "packagesPath": "C:\\Users\\Amanuel\\.nuget\\packages\\",
+        "outputPath": "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRDL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Juniper\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Amanuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -28,8 +34,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRModels\\RRModels.csproj": {
-                "projectPath": "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRModels\\RRModels.csproj"
+              "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRModels\\RRModels.csproj": {
+                "projectPath": "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRModels\\RRModels.csproj"
               }
             }
           }
@@ -80,22 +86,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRModels\\RRModels.csproj": {
+    "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRModels\\RRModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRModels\\RRModels.csproj",
+        "projectUniqueName": "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRModels\\RRModels.csproj",
         "projectName": "RRModels",
-        "projectPath": "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRModels\\RRModels.csproj",
-        "packagesPath": "C:\\Users\\Juniper\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Juniper\\Revature\\Cooks-and-Crooks-Hackathon\\RRModels\\obj\\",
+        "projectPath": "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRModels\\RRModels.csproj",
+        "packagesPath": "C:\\Users\\Amanuel\\.nuget\\packages\\",
+        "outputPath": "C:\\revature\\Cooks-and-Crooks-Hackathon\\RRModels\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Juniper\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Amanuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -134,7 +146,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

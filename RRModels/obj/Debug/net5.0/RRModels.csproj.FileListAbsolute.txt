@@ -22,3 +22,15 @@ C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRModels\obj\Debug\net5.0\R
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRModels\obj\Debug\net5.0\RRModels.dll
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRModels\obj\Debug\net5.0\ref\RRModels.dll
 C:\Users\Juniper\Revature\Cooks-and-Crooks-Hackathon\RRModels\obj\Debug\net5.0\RRModels.pdb
+C:\revature\Cooks-and-Crooks-Hackathon\RRModels\bin\Debug\net5.0\RRModels.deps.json
+C:\revature\Cooks-and-Crooks-Hackathon\RRModels\bin\Debug\net5.0\RRModels.dll
+C:\revature\Cooks-and-Crooks-Hackathon\RRModels\bin\Debug\net5.0\ref\RRModels.dll
+C:\revature\Cooks-and-Crooks-Hackathon\RRModels\bin\Debug\net5.0\RRModels.pdb
+C:\revature\Cooks-and-Crooks-Hackathon\RRModels\obj\Debug\net5.0\RRModels.csprojAssemblyReference.cache
+C:\revature\Cooks-and-Crooks-Hackathon\RRModels\obj\Debug\net5.0\RRModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\revature\Cooks-and-Crooks-Hackathon\RRModels\obj\Debug\net5.0\RRModels.AssemblyInfoInputs.cache
+C:\revature\Cooks-and-Crooks-Hackathon\RRModels\obj\Debug\net5.0\RRModels.AssemblyInfo.cs
+C:\revature\Cooks-and-Crooks-Hackathon\RRModels\obj\Debug\net5.0\RRModels.csproj.CoreCompileInputs.cache
+C:\revature\Cooks-and-Crooks-Hackathon\RRModels\obj\Debug\net5.0\RRModels.dll
+C:\revature\Cooks-and-Crooks-Hackathon\RRModels\obj\Debug\net5.0\ref\RRModels.dll
+C:\revature\Cooks-and-Crooks-Hackathon\RRModels\obj\Debug\net5.0\RRModels.pdb

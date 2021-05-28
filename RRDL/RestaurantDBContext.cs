@@ -19,6 +19,8 @@ namespace RRDL
 
         public DbSet<Review> Reviews { get; set; }
 
+        public DbSet<Reservation> Reservations { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Restaurant>()

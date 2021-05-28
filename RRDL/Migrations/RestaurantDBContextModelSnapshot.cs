@@ -67,7 +67,7 @@ namespace RRDL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Reservation");
+                    b.ToTable("Reservations");
                 });
 
             modelBuilder.Entity("RRModels.Restaurant", b =>

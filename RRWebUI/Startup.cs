@@ -33,6 +33,7 @@ namespace RRWebUI
             services.AddScoped<IRepository, RepoDB>();
             services.AddScoped<IRestaurantBL, RestaurantBL>();
             services.AddScoped<IReviewBL, ReviewBL>();
+            services.AddScoped<IReservationBL, ReservationBL>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

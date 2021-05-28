@@ -98,5 +98,43 @@ namespace RRDL
             _context.SaveChanges();
             return restaurant;
         }
+
+        public Reservation AddReservation(Reservation reservation)
+        {
+            _context.Reservations.Add(reservation);
+            _context.SaveChanges();
+            return reservation;
+        }
+        
+        public List<Reservation> GetAllReservations(){
+            List<Reservation> reservations = _context.Reservations.Select( rsrv => rsrv).ToList();
+
+            return reservations;
+        }
+        
+        public List<Reservation> GetReservationByCustomerId(int id){
+            List<Reservation> reservations = _context.Reservations
+            .Where( reserv => reserv.CustomerId == id)
+            .Select( rsrv => rsrv).ToList();
+
+            return reservations;
+        }
+
+        public List<Reservation> GetReservationsByRestaurantId(int id){
+            List<Reservation> reservations = _context.Reservations
+            .Where( reserv => reserv.RestaurantId == id)
+            .Select( rsrv => rsrv).ToList();
+
+            return reservations;
+        }
+
+        public List<Reservation> GetReservationsByCustomerRestaurant(int customerId, int restaurantId)
+        {
+            List<Reservation> reservations = _context.Reservations
+            .Where(reserv => reserv.RestaurantId == restaurantId && reserv.CustomerId == customerId)
+            .Select(rsrv => rsrv).ToList();
+
+            return reservations;
+        }
     }
 }
