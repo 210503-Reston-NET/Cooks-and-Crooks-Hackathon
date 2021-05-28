@@ -37,10 +37,10 @@ namespace RRWebUI
             services.AddScoped<IRestaurantBL, RestaurantBL>();
             services.AddScoped<IReviewBL, ReviewBL>();
 
-            services.AddDefaultIdentity<Customer>()
-                .AddEntityFrameworkStores<RestaurantDBContext>()
-                .AddDefaultUI()
-                .AddDefaultTokenProviders();
+            //services.AddDefaultIdentity<Customer>()
+            //    .AddEntityFrameworkStores<RestaurantDBContext>()
+            //    .AddDefaultUI()
+            //    .AddDefaultTokenProviders();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using RRDL;
+using RRModels;
 
 [assembly: HostingStartup(typeof(RRWebUI.Areas.Identity.IdentityHostingStartup))]
 namespace RRWebUI.Areas.Identity
@@ -15,6 +16,10 @@ namespace RRWebUI.Areas.Identity
         public void Configure(IWebHostBuilder builder)
         {
             builder.ConfigureServices((context, services) => {
+                services.AddDefaultIdentity<Customer>()
+                    .AddEntityFrameworkStores<RestaurantDBContext>()
+                    .AddDefaultUI()
+                    .AddDefaultTokenProviders();
             });
         }
     }
