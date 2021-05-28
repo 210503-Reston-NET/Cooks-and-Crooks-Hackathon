@@ -36,6 +36,7 @@ namespace RRWebUI
             services.AddScoped<IRepository, RepoDB>();
             services.AddScoped<IRestaurantBL, RestaurantBL>();
             services.AddScoped<IReviewBL, ReviewBL>();
+            services.AddScoped<IReservationBL, ReservationBL>();
 
             services.AddDefaultIdentity<Customer>()
                 .AddEntityFrameworkStores<RestaurantDBContext>()
